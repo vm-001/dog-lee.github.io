@@ -13,6 +13,7 @@
          */
         run: function() {
             var self = this;
+            
             // resize all codeblocks
             self.resize();
             // resize codeblocks when window is resized
