@@ -22,9 +22,10 @@
   <link rel="stylesheet" href="ng-notify.min.css">
   <link rel="stylesheet" href="dropzone.css">
   <link rel="stylesheet" href="editor.css">
-  <script src="jquery.min.js"></script>
-  <script src="bootstrap.min.js"></script>
-  <script src="angular.min.js"></script>
+  
+  <!-- <script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.js"></script> -->
+  <!-- <script src="bootstrap.min.js"></script> -->
+ <!--  <script src="angular.min.js"></script>
   <script src="angular-route.min.js"></script>
   <script src="angular-sanitize.min.js"></script>
   <script src="showdown.js"></script>
@@ -36,11 +37,48 @@
   <script src="angular-cookies.min.js"></script>
   <script src="angular-ui-router.min.js"></script>
   <script src="dropzone.js"></script>
-  <script src="ghostdown.js"></script>
+  <script src="ghostdown.js"></script> -->
   <!-- // <script src="js/service.js?v=2"></script> -->
-  <script src="service.js?v=3"></script>
+  <!-- <script src="service.js?v=3"></script> -->
   <!-- // <script src="js/app.js?v=2"></script> -->
-  <script src="app.js?v=3"></script>
+  <!-- <script src="app.js?v=3"></script> -->
+  <!-- edit by dog -->
+  <script>
+  // function $(id) {return document.getElementById(id)}
+
+  function makepdf()  {
+    var form = document.createElement("form");
+    form.setAttribute("method", "post");
+    form.setAttribute("action", 'http://pdf.ftqq.com');
+    form.setAttribute("target", "_blank");
+    // var params = {
+    //   'title': $('#drtitle').html(),
+    //   'subtitle': $('#drsubtitle').html(),
+    //   'content': $('#cvcontent').html(),
+    //   'pdfkey':'jobdeersocool'
+    // };
+    var params = {
+      'title': document.getElementById('drtitle').innerHTML,
+      'subtitle': document.getElementById('drsubtitle').innerHTML,
+      'content': document.getElementById('cvcontent').innerHTML,
+      'pdfkey':'jobdeersocool'
+    };
+    for (var key in params) {
+      if(params.hasOwnProperty(key)) {
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", key);
+            hiddenField.setAttribute("value", params[key]);
+
+            form.appendChild(hiddenField);
+      }
+    }
+    document.body.appendChild(form);
+     form.submit();
+  }
+
+
+  </script>
 </head>
 <body style="overflow: auto;">
   <!-- uiView:  --><div ui-view="" id="resume_body" class="ng-scope">  <header class="site-head ng-scope">
@@ -107,15 +145,11 @@
 <h1 id="">致谢</h1>
 
 <p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p></div></div>
-  <div class="content passbox ng-scope ng-hide" ng-show="loading">
-    <center>
-    <p>加载中...</p>
-  </center>
-  </div>  
+  
 
   <div class="action-bar hidden-xs ng-scope">
       <!--<a href="https://github.com/geekcompany/DeerResume"><img src="image/home.png" /></a>--> 
-  &nbsp;&nbsp;&nbsp;<a href="http://leeys.deercv.com/#" onclick="makepdf()" title="PDF格式" target="_blank" rel="external"><img src="http://leeys.deercv.com/image/book.png"></a>
+  &nbsp;&nbsp;&nbsp;<a href="#" onclick="makepdf()" title="PDF格式"><img src="http://leeys.deercv.com/image/book.png"></a>
   &nbsp;&nbsp;&nbsp;<a ui-sref="admin" ng-show="has_token" href="http://leeys.deercv.com/admin" class="" target="_blank" rel="external"><img src="http://leeys.deercv.com/image/cog.png"></a>
   </div> 
 
