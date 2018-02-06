@@ -34,7 +34,7 @@
                 <p class="subtitle ng-binding" id="drsubtitle"></p>
             </div>
         </header>
-        <div class="content yue ng-scope ng-isolate-scope" id="cvcontent" ghost-down="resume.content" can-weixin-scan="resume.can_weixin_spread">
+        <div style="word-break: break-word;" class="content yue ng-scope ng-isolate-scope" id="cvcontent" ghost-down="resume.content" can-weixin-scan="resume.can_weixin_spread">
             <div class="resume_content ng-scope">
                 <h1 id="">联系方式</h1>
                 <ul>
@@ -45,25 +45,34 @@
                 <h1 id="">个人信息</h1>
                 <ul>
                     <li>男 / 1996</li>
-                    <li>大专 / 广东科学技术职业学院-计算机学院</li>
+                    <li>大专 / 广东科学技术职业学院-计算机学院 / 2018届</li>
                     <!-- <li>工作经验：一年</li> -->
-                    <li>Github：<a href="https://github.com/Dog-Lee/demos" target="_blank" rel="external">https://github.com/Dog-Lee/demos</a></li>
-                    <li>博客： <a href="http://blog.csdn.net/dog_lea/" target="_blank" rel="external">C博客</a> / <a href="http://leeys.top/" target="_blank" rel="external">独立博客</a></li>
+                    <li><a href="https://github.com/Dog-Lee" target="_blank" rel="external">Github</a> / <a href="http://blog.csdn.net/dog_lea/" target="_blank" rel="external">C博客</a> / <a href="http://leeys.top/" target="_blank" rel="external">独立博客</a></li>
+                    <!-- <li>Github：<a href="https://github.com/Dog-Lee">https://github.com/Dog-Lee</a></li> -->
+                    <!-- <li>博客： <a href="http://blog.csdn.net/dog_lea/">C博客</a> / <a href="http://leeys.top/">独立博客</a></li> -->
                 </ul>
                 <hr>
                 <h1 id="">工作经历</h1>
-                    <h3>极客狗工作室（2016年11月 —— 至今）</h3>
+                    <h3>唯美美妆 —— 美妆电商（2017年7月 —— 至今） Java开发工程师</h3>
+                    <p>美妆团：后台管理页面使用Element-UI与Vue开发，根据运营人员配置的文字，商品，优惠券等信息一键生成H5活动页面并上传至阿里云OOS。也负责该模块的App接口开发，数据统计。</p>
+                    <p>CPS：负责星罗（Linkstars）与盘石（Adyun）CPS平台对接。</p>
+                    <p>重构短信模块：短信接口发送失败时进行渠道切换重试，并增加第三方短信服务回调接口处理运营商黑名单短信，解决短信发送失败与回调黑名单的问题。</p>
+                    <p>美吧App接口：美吧App是线下实体店的管理软件，用于对员工信息的录入与修改，出勤管理，以及小程序预约提醒，用户到店确认服务等功能。</p>
+                    <p>定时任务系统：对系统所有的定时任务归类管理， 支持条件查询任务，实时查看任务运行状态，任务的新建与停启用，并可动态配置cron表达式，解决只有部署系统才能修改定时任务的问题。</p>
+                    <p>其他：平时也负责App接口改造，迭代与版本兼容，小程序协助开发，后台管理界面改造等。工作之余开发过一个根据文本倾向性与用户模型对评论或帖子进行计分排序的模型。</p>
+
+                    <h3>极客狗工作室（2016年11月 —— 2017年6月）</h3>
                     <!-- <p> 产品经理 </p> -->
-                    <p>大二早期创办的工作室，主产品是一款校园App，我负责产品原型、Headhunting、爬虫与后端API的工作。</p>
+                    <p>大二早期创办的工作室，主产品是一款校园App，我负责产品原型、爬虫与后端API的工作。</p>
                 <hr>
 
                 <h1 id="">独立项目</h1>
                 <ul>
-                    <li><a href="http://demo.leeys.top/demo0" target="_blank" rel="external">选课小应用</a>：大一暑假使用JavaWeb开发的简易选课应用，覆盖主要的登录、密码找回、选课三种功能。为提高并发量，前端登录页面使用静态HTML，配合Nginx与Gzip实现静态登录页面单秒3W并发访问量，配置Tomcat线程池、连接池与优化MySQL参数使得选课的平均读写性能达到每秒2000多，超越学校教务软件而且不轻易宕机。后来管理员以安全性为由婉拒了我的上线请求。此次开发经历让我学习了如何从易到难地优化应用性能。大二用Spring Boot重构，并写了一篇<a href="http://leeys.top/2017/04/28/demo0%E5%B0%8F%E7%BB%93/" target="_blank" rel="external">技术小结</a>总结了整个过程。</li>
+                    <li><a href="http://demo.leeys.top/demo0" target="_blank" rel="external">选课小应用</a>：大一暑假使用JavaWeb开发的简易选课应用，提供登录、密码找回与选课三种功能。为提高并发量，前端登录页面使用静态HTML，配合Nginx与Gzip实现静态登录页面单秒3W并发访问量，配置Tomcat线程池、数据库连接池与优化MySQL参数使得选课的平均读写性能达到每秒2000多，超越学校教务软件而且不轻易宕机。后来管理员以安全性为由婉拒了我的上线请求。此次开发经历让我学习了如何从易到难地优化应用性能。大二用Spring Boot重构，并写了一篇<a href="http://leeys.top/2017/04/28/demo0%E5%B0%8F%E7%BB%93/" target="_blank" rel="external">技术小结</a>总结了整个过程。</li>
                     <li><a href="http://demo.leeys.top/demo1" target="_blank" rel="external">在线石头剪刀布</a>：使用循环队列存储玩家的猜拳记录，服务器会在玩家人数不足时休眠玩家线程保存猜拳记录，并在下一位玩家接入时交换猜拳记录。</li>
                     <li><a href="http://demo.leeys.top/demo2" target="_blank" rel="external">滑稽大作战</a>：一款支持双人合作的实时游戏。前端使用Vue绑定数据与事件，Vue-resource作Ajax框架、新浪的OAuth2。利用Websocket推送与自己的优化技巧，在不影响流畅性的前提下减少数据包的传输次数，使1M带宽的服务器也能支持大量玩家。此外还写了一篇小结并推荐在<a href="https://juejin.im/entry/595b06b66fb9a06ba5196a6f/detail" target="_blank" rel="external">掘金</a>上。</li>
-                    <li>校园App：极客狗工作室负责的产品，主打本校的校园服务。涵盖失物招领、线下闲置交易、图书馆、Idea Factory与社交等功能。使用Lucene做搜索引擎；极光推送配合Redis实现异设备登录提醒；图书馆使用爬虫获取数据，图片像素扫描100%识别验证码，为用户提供查书、自动续借，过期邮件提醒等贴心功能；发布失物招领帖除了做消息的展示以外还会根据提交的信息检查数据库，当匹配到已实名认证的用户时会自动推送消息到目标用户手机，解决现实中低效的失物招领方式；七牛云服务用来存储用户上传的图片；爬虫也用来获取饭卡余额等基础信息。这是我在产品领域上的第一次探索，最后因为缺乏合适的设计师导致产品一直无法完工，最终不得不放弃。半年的技术开发与产品探索，虽以失败告终，但份经历对我弥足珍贵。</li>
-                    <li><a href="http://demo.leeys.top/demo5" target="_blank" rel="external">天天书屋</a>：图书购物商城。期末PHP答辩作业，原型来自课本，因不满足课本的做法，自己从UI、前端、后端重做一番，并向图书馆老师索要了全校35W图书馆书籍记录。技术栈包括Spring-Boot、Vue、Vue-router、Vue-resource、Element-ui、Thymeleaf、Reids、Alipay、Lucene、Email等。使用了Lucene做中文全文搜索，还造了一个简化Lucene使用的轮子。Redis除了用在离线购物车与在线购物车的合并以外，还用来做缓存以提高性能。支付宝的沙箱环境实现了支付功能。Github里有Gif演示。</li>
+                    <li>广科小狗：极客狗工作室负责的校园产品，主要功能有失物招领，闲置交易，图书馆，创意工厂与社交等功能。技术上使用Lucene做搜索引擎；极光推送与Redis做异设备登录的提醒；图书馆使用爬虫，登录验证码使用像素扫描匹配，实现查书、自动续借与过期邮件提醒等功能；七牛云做用户图片存储；爬虫也用来获取饭卡余额等个人信息。这是我在产品领域上的第一次探索，最后因为缺乏合适的设计师导致产品一直无法完工，最终不得不放弃。半年的开发与产品探索，虽以失败告终，但份经历对我弥足珍贵。</li>
+                    <li><a href="http://demo.leeys.top/demo5" target="_blank" rel="external">天天书屋</a>：图书购物商城。大二期末PHP答辩作业，原型来自课本，因觉得自己能比课本做得更好，便重构了UI、前端与后端，图书数据来自学校35W图书馆书籍记录。技术栈包括Spring-Boot、Vue、Vue-router、Vue-resource、Element-UI、Thymeleaf、Reids、Lucene等。豆瓣API用来根据ISBN查询图书信息，支付宝的沙箱环境实现了支付功能。Github里有Gif演示。</li>
                 </ul>
                 <hr>
                 <h1 id="">技术文章</h1>
@@ -74,25 +83,26 @@
                 <hr>
                 <h1 id="">技术栈</h1>
                     <h2>Java：</h2>
-                    <p style="word-break: break-word;">大一下学期开始修的语言，是我目前最擅长的语言。16年底开始接触Spring框架，后改用Spring Boot框架。最擅长也最喜欢REST风格API的开发，配合Swagger能够书写简明扼要的接口文档，精通REST风格API的按需鉴权。JavaWeb开发则次之。了解JVM内存模型与GC，在大量Heap消耗的任务中懂得如何辅助GC防止OOM，对Reids实现副数据库或缓存以提高应用性能有一定的实践经验。对事务亦有实践基础，在demo0小结文章里总结过事务的使用与优化，从Java原生事务到框架的注解式事务或者SQL存储过程事务都能胜任。对Java的模板式代码尤其讨厌，能够使用Lombok、Lambda或自己编写Callback简化大量模板代码。</p>
+                    <p style="">熟练掌握JavaSE，Spring与Spring Boot。用Spring Boot重构过所有个人项目。擅长REST风格API开发，配合Swagger能够书写简明扼要的接口文档，精通REST风格API的按需鉴权。了解过JVM内存模型与GC，对事务亦有实践基础。对Java的模板式代码尤其讨厌，能够使用Lombok、Lambda或自己编写Callback简化大量模板代码。对项目异常体系有良好的认知。</p>
                     <h2>Web前端：</h2>
-                    <p>有扎实的HTML/CSS基础，但浏览器端的JavaScript次之。我的独立项目的前端都复原于自己的铅笔稿，在有设计稿的前提下能做到像素级复原。目前的前端框架主要为Vue，UI框架为Element-UI。</p>
+                    <p>有扎实的HTML/CSS基础。目前的前端框架主要为Vue，UI框架为Element-UI。</p>
                     <h2>MySQL：</h2>
-                    <p>除了DDL、DML、DCL，也能使用SQL书写嵌套查询、存储过程与事务。熟悉基础的MySQL优化参数。大一暑假搭载过两台服务器MySQL的主从复制实现读写分离。</p>
+                    <p>除了DDL、DML、DCL，也能使用SQL书写嵌套查询、存储过程与事务。熟悉基础的MySQL优化参数。</p>
 
                 <hr>
                 <h1 id="">自我评定</h1>
                 <ol>
-                    <li>热爱技术，崇尚Geek精神。大一成绩良好，课堂与课下时常帮助同学解决力所能及的编程问题。</li>
+                    <li>热爱技术，拥抱互联网产品，具备一定产品思维。</li>
                     <li>热爱互联网产品。具备产品思维。</li>
-                    <li>不擅长基础算法，但能够在算法之外的架构层、应用层、以及数据库层做性能优化，有过多次性能调优经验，对应用的性能非常敏感。（广东省蓝桥杯大赛仅获三等奖）</li>
-                    <li>良好的代码与注释风格。</li>
+                    <li>喜欢架构，具备一定的架构能力，基础算法一般（广东省蓝桥杯大赛仅获三等奖）</li>
+                    <li>良好的代码与注释风格。代码洁癖。</li>
                     <li>强烈的自我驱动能力。</li>
                     <li>有基础的运维能力。Linux课余自学，日常开发使用Win+GitBash，不是命令行的拥趸。能够使用日常的命令完成线上部署、故障定位修复、Tomcat日志分析等工作。</li>
-                    <li>热爱解释语言。对NodeJS非常感兴趣，写过一个Node脚本，根据输入的信息生成Spring Boot项目文件的脚手架，希望有机会能往Node服务端发展。</li>
+                    <!-- <li>热爱解释语言。对NodeJS非常感兴趣，写过一个Node脚本，根据输入的信息生成Spring Boot项目文件的脚手架，希望有机会能往Node服务端发展。</li> -->
                 </ol>
                 <hr>
                 <h1 id="">代码之外</h1>
+                <!-- <p>[ 良好作息习惯 ] [ 运动 ] [ 独处 ] [ 冥想 ] [ 博客 ]</p> -->
                 <ol>
                     <li>良好的作息习惯。大学入学至今，保持着12点前睡7点前醒的习惯。</li>
                     <li>运动。大一在校运会上获得计算机学院男子 3000米第三名。</li>
@@ -101,20 +111,20 @@
                 </ol>
                 <hr>
                 <h1 id="">技能清单</h1>
-                <div>（一份完整技能清单）</div>
+                <div>（以下是我能熟练使用的技能清单）</div>
                 <ul>
-                    <li>Web前端：VueJS（Vue-x）/ Element UI</li>
-                    <li>Web后端：Spring Boot / SpringMVC / JPA or Mybatis </li>
+                    <li>Web前端：Vue / Element-UI / HTML / CSS</li>
+                    <li>Web后端：Spring Boot / SpringMVC / Mybatis / RESTful</li>
                     <li>Web服务器：Tomcat / Nginx</li>
                     <li>数据库：MySQL / Redis</li>
-                    <li>版本管理、文档和自动化部署工具：Git</li>
+                    <li>版本管理：SVN</li>
                     <li>云和开放平台：腾讯云 / 新浪云 / 支付宝 / 七牛 / 极光推送 </li>
-                    <li>其他：Geetest / Swagger / RESTful / Lucene </li>
+                    <li>其他：Geetest / Swagger / Lucene</li>
                 </ul>
                 <hr>
                 <h1 id="">工作期望</h1>
                     <ul>
-                        <li>工作类型：Java全栈 / App后端 / JavaWeb</li>
+                        <li>期望职位：Java开发工程师</li>
                     </ul>
                 <hr>
                 <h1 id="">致谢</h1>
